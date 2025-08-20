@@ -9,7 +9,7 @@
   <meta name="keywords" content="">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/webIcon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
@@ -75,13 +75,10 @@
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" href="vestidosServicio.html"><i class="bi bi-search"></i></a>
-
-      
-      <!-- <a href="#" class="ico-item fa fa-search js__toggle_open" data-target="#searchform-header"></a>
-			<form action="#" id="searchform-header" class="searchform js__toggle"><input type="search" placeholder="Search..." class="input-search"><button class="fa fa-search button-search" type="submit"></button></form> -->
-      
-
+      <div class="search-container">
+        <input type="text" class="search-input" placeholder="Buscar...">
+        <a class="btn-getstarted search-btn" href="#" id="toggleBtn"><i class="bi bi-search"></i></a>
+      </div>
     </div>
   </header>
 
@@ -98,7 +95,7 @@
               </div>
 
               <div class="main-heading">
-                <h1>Mi <br>Chula</h1>
+                <h1>Confección profesional en cancún</h1>
               </div>
 
               <div class="divider"></div>
@@ -119,7 +116,7 @@
           <div class="col-lg-5" data-aos="zoom-out">
             <div class="visual-content">
               <div class="fluid-shape">
-                <img src="assets/img/butterflies.png" alt="Abstract Fluid Shape" class="fluid-img">
+                <img src="assets/img/Logo.png" alt="Abstract Fluid Shape" class="fluid-img">
               </div>
 
               <div class="stats-card">
@@ -164,21 +161,21 @@
           <div class="col-lg-6 mt-4 mt-lg-0" data-aos="fade-left" data-aos-delay="300">
             <div class="about-content">
               <h2>Mi chula la empresa</h2>
-              <p class="lead"> Nuestro principal objetivo es brindar atención personalizada, desde una  asesoría de imagen hasta el ultimo accesorio de joyería, contamos con paquetes que incluyen maquillaje y peinado si así lo deseas.</p>
-              <p>Todos los vestidos son pensando en la economía femenina, nuestros precios están al alcance del bolsillo. Porque Rentar es la mejor opción!!</p>
+              <p> Nuestro principal objetivo es brindar atención personalizada, desde una  asesoría de imagen hasta el ultimo accesorio de joyería, contamos con paquetes que incluyen maquillaje y peinado si así lo deseas.
+              Todos los vestidos son pensando en la economía femenina, nuestros precios están al alcance del bolsillo. Porque Rentar es la mejor opción!!</p>
 
               <div class="row g-4 mt-3">
                 <div class="col-md-6" data-aos="zoom-in" data-aos-delay="400">
                   <div class="feature-item">
                     <i class="bi bi-check-circle-fill"></i>
-                    <h5>Dedicated Team Support</h5>
+                    <h5>descripcion importante 1</h5>
                     <p>Our highly skilled professionals are committed to providing personalized service and impactful solutions on every engagement.</p>
                   </div>
                 </div>
                 <div class="col-md-6" data-aos="zoom-in" data-aos-delay="450">
                   <div class="feature-item">
                     <i class="bi bi-lightbulb-fill"></i>
-                    <h5>Forward-Thinking Approach</h5>
+                    <h5>descripcion important 2</h5>
                     <p>We embrace innovative methodologies to develop unique strategies that drive lasting success.</p>
                   </div>
                 </div>
@@ -201,126 +198,87 @@
         <div><span>Servicios de</span> <span class="description-title">vestidos</span></div>
       </div><!-- End Section Title -->
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="service-details">
 
-        <div class="service-header">
-          <div class="row align-items-center">
-            <div class="col-lg-8 col-md-12">
-              <div class="service-intro">
-                <h2 class="service-heading">
-                  <div>Servicios de renta</div>
-                  <div><span>Ajustados a tu necesidad</span></div>
-                </h2>
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-gallery" data-aos="fade-up" data-aos-delay="300">
+              <div class="service-details-slider swiper init-swiper">
+                <script type="application/json" class="swiper-config">
+                  {
+                    "loop": true,
+                    "speed": 800,
+                    "autoplay": {
+                      "delay": 5000
+                    },
+                    "slidesPerView": 1,
+                    "spaceBetween": 30,
+                    "breakpoints": {
+                      "768": {
+                        "slidesPerView": 3
+                      }
+                    },
+                    "pagination": {
+                      "el": ".swiper-pagination",
+                      "type": "bullets",
+                      "clickable": true
+                    }
+                  }
+                </script>
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="portfolio-item">
+                      <a href="vestidosServicio.html"><img src="assets/img/services/services-2.webp" alt="" class="img-fluid" loading="lazy"></a>
+                      <div class="portfolio-info">
+                        <h5>Renta de vestidos de XV años</h5>
+                        <p>Vestidos para tu fiesta de XV años</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="portfolio-item">
+                      <a href="vestidosServicio.html"><img src="assets/img/services/services-4.webp" alt="" class="img-fluid" loading="lazy"></a>
+                      <div class="portfolio-info">
+                        <h5>Renta de vestidos de boda</h5>
+                        <p>Vestidos para el dia más feliz de tu vida</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="portfolio-item">
+                      <img src="assets/img/services/services-10.webp" alt="" class="img-fluid" loading="lazy">
+                      <div class="portfolio-info">
+                        <h5>Renta de vestidos de gala</h5>
+                        <p>Para estar al nivel de una reunion tan elegante</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="portfolio-item">
+                      <a href="vestidosServicio.html"><img src="assets/img/services/services-2.webp" alt="" class="img-fluid" loading="lazy"></a>
+                      <div class="portfolio-info">
+                        <h5>Renta de vestidos de fiesta</h5>
+                        <p>Para tener algo unico en esas fiestas</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="portfolio-item">
+                      <a href="vestidosServicio.html"><img src="assets/img/services/services-4.webp" alt="" class="img-fluid" loading="lazy"></a>
+                      <div class="portfolio-info">
+                        <h5>Confeccion a medida</h5>
+                        <p>Confeccionamos a medida la prenda que necesites</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
               </div>
-            </div>
-            <div class="col-lg-4 col-md-12">
-              <div class="service-summary">
-                <p>
-                  Nosotros pensamos en las situaciones y momentos en los que necesitas vestir a la moda.
-                <a href="servicios.html" class="service-btn">
-                  Ver todos los servicios
-                  <i class="bi bi-arrow-right"></i>
-                </a>
-              </div>
-            </div>
           </div>
         </div>
 
-        <div class="row justify-content-center">
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-card position-relative z-1">
-              <div class="service-icon">
-                <i class="bi bi-palette"></i>
-              </div>
-              <a href="vestidosServicio.html" class="card-action d-flex align-items-center justify-content-center rounded-circle">
-                <i class="bi bi-arrow-up-right"></i>
-              </a>
-              <h3>
-                <a href="vestidosServicio.html">
-                  Renta de vestidos <span>XV años</span>
-                </a>
-              </h3>
-              <p>
-                Vesitos que toda quinceañera sueña en su celebracion especial.
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-card position-relative z-1">
-              <div class="service-icon">
-                <i class="bi bi-gem"></i>
-              </div>
-              <a href="vestidosServicio.html" class="card-action d-flex align-items-center justify-content-center rounded-circle">
-                <i class="bi bi-arrow-up-right"></i>
-              </a>
-              <h3>
-                <a href="vestidosServicio.html">
-                  Renta de vestidos de <span>boda</span>
-                </a>
-              </h3>
-              <p>
-                Vestidos para ese dia especial en donde se la union se hace realidad.
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-card position-relative z-1">
-              <div class="service-icon">
-                <i class="bi bi-megaphone"></i>
-              </div>
-              <a href="vestidosServicio.html" class="card-action d-flex align-items-center justify-content-center rounded-circle">
-                <i class="bi bi-arrow-up-right"></i>
-              </a>
-              <h3>
-                <a href="vestidosServicio.html">
-                  Renta de vestidos de <span>gala</span>
-                </a>
-              </h3>
-              <p>
-                Vestidos para cuando necesitas vestir lo mas elegante posible.
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-card position-relative z-1">
-              <div class="service-icon">
-                <i class="bi bi-code-slash"></i>
-              </div>
-              <a href="vestidosServicio.html" class="card-action d-flex align-items-center justify-content-center rounded-circle">
-                <i class="bi bi-arrow-up-right"></i>
-              </a>
-              <h3>
-                <a href="vestidosServicio.html">
-                  Renta de vestidos de <span>fiesta</span>
-                </a>
-              </h3>
-              <p>
-                Vestidos para todo tipo de fiestas pero lo importante es que te veas bien.
-              </p>
-              
-            </div>
-          </div>
-          <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-card position-relative z-1">
-              <div class="service-icon">
-                <i class="bi bi-graph-up"></i>
-              </div>
-              <a href="vestidosServicio.html" class="card-action d-flex align-items-center justify-content-center rounded-circle">
-                <i class="bi bi-arrow-up-right"></i>
-              </a>
-              <h3>
-                <a href="vestidosServicio.html">
-                  Confección a <span>medida</span>
-                </a>
-              </h3>
-              <p>
-                Confeccionamos la prenda que necesitas con tus propias medidas.
-              </p>
-            </div>
-          </div>
-        </div>
+      </div><!-- /Service Details Section -->
 
-      </div>
+      
 
     </section><!-- /Services Section -->
 

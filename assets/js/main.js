@@ -213,3 +213,25 @@
   document.addEventListener('scroll', navmenuScrollspy);
 
 })();
+
+const toggleBtn = document.getElementById("toggleBtn");
+const searchInput = document.querySelector(".search-input");
+const result = document.getElementById("result");
+
+toggleBtn.addEventListener("click", () => {
+if (!searchInput.classList.contains("show")) {
+  // Primera vez → expandir input
+  searchInput.classList.add("show");
+  searchInput.focus();
+} else {
+  // Segunda vez → revisar contenido
+  const query = searchInput.value.trim();
+  if (query) {
+    alert(query);
+  } else {
+    // Si está vacío → cerrar de nuevo
+    searchInput.classList.remove("show");
+    result.textContent = "";
+  }
+}
+});
